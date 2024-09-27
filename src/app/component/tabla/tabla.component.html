@@ -1,0 +1,35 @@
+<select name="" id="" [(ngModel)]="opcion">
+    <option value="Acción">Accion</option>
+    <option value="Aventura">Aventura</option>
+    <option value="Superhéroes">Superheroes</option>
+  </select>
+  <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>TITULO</th>
+          <th>AUTOR</th>
+        </tr>
+      </thead>
+      <tbody>
+  
+        
+          @for (item of comics; track comics) {
+            @if (item.genero ==opcion) {
+              <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.titulo}}</td>
+                <td>{{item.autor}}</td>
+                
+                <td>
+                  <button class="btn btn-success" [routerLink]="[item.id]">ver detalles</button>
+                </td>
+              </tr>
+            }
+            
+          }
+         
+       
+        
+      </tbody>
+    </table>

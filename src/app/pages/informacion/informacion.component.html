@@ -1,0 +1,12 @@
+<h4>FILTRAR POR: </h4>
+<app-tabla></app-tabla>
+
+<h4> CAMBIAR VISTA </h4>
+<button class="btn btn-sucess"
+(click)="vista()">Dia/noche</button>
+@if (vistacomics==true) {
+  <app-tabla2></app-tabla2>
+}@else {
+  <app-galeria></app-galeria>
+}
+ 

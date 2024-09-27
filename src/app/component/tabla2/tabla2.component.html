@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>COMICS </h2>
+    <p>Lista de comics mas famosos segun la critica:</p>            
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>ID</th> 
+          <th>TITULO</th>
+          <th>GENERO</th>
+          <th>LANZAMIENTO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tbody> 
+            @for(item of comics; track comics) {
+                <tr>
+                    <td>{{item.id}}</td>
+                    <td>{{item.titulo}}</td>
+                    <td>{{item.genero}}</td>
+                    <td>{{item.lanzamiento}}</td>
+                    
+                  </tr>
+            }                     
+         
+    
+       
+      </tbody>
+    </table>
+  </div>

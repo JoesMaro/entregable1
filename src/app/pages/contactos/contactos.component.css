@@ -1,0 +1,15 @@
+.mensaje{
+    text-align: center;
+    color: cornflowerblue;
+}
+
+.testimonio{
+    text-align: center;
+    color: red;
+
+}
+
+.video-container{
+    text-align: center;
+    justify-content: center;
+}
